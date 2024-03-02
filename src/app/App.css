@@ -1,0 +1,297 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+  }
+
+  
+
+  
+  .container{
+    width: 100%;
+   
+    background-color:#ced8ff;
+    transition: 0.5s;
+  }
+  
+  
+  .main-div{
+    min-height: 100vh;
+  }
+  
+  .container.dark{
+    background-color: #222;
+  }
+  
+  .dark .nav-bar{
+    background-color: #000;
+  } 
+  
+  .dark .logo{
+    color: #fff;
+  }
+  
+  .dark ul{
+    color: #fff;
+  }
+  .vend-logo{
+    width: 90%;
+    height: 40%;
+  
+    margin-top: 30px;
+    transition: 0.5s;
+
+    
+  }
+  .dark .vend-logo{
+    filter: invert(100%) brightness(100%);
+  }
+
+  .vend-div{
+    width:40%;
+  }
+  
+
+  
+  
+  .nav-bar{
+    position:sticky;
+    z-index: 1;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  ul li{
+    display: inline-block;
+    flex: 1;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .logo{
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+  }
+  
+  .toggle-img{
+    width: 40px;
+  }
+  
+  
+  .container-divdark{
+    background-color: black;
+  }
+
+ 
+  .container-prices {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light gray background */
+    line-height: 40px;
+  }
+  
+  .form-prices {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-left: 5px;
+   
+  }
+  
+  input[type="file"],
+  input[type="radio"],
+  input[type="checkbox"],
+  .btn-prices {
+    margin-bottom: 10px;
+  }
+  
+.btn-prices {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-prices:hover {
+    background-color: #45a049;
+  }
+  
+  .prices-prices {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+  }
+  
+
+  .main--div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 50px;
+    position: relative;
+  
+  }
+
+  .maincontent-div{
+    width:40%;
+    height: 400px;
+
+    margin-left: 60PX;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: 0.5s;
+   
+  }
+
+  .dark   .maincontent-div{
+    background-color: #f4f4f4;
+  }
+
+  .dark   .print-btn{
+    background-color: #222;
+    color:white;
+  }
+
+  .maincontent-div h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 1197px) {
+    .maincontent-div h2 {
+        font-size: 30px;
+    }
+    
+  .maincontent-div p{
+    font-size: 15px;
+    line-height: 350px;
+    margin-bottom: 20px;
+  }
+}
+
+  .maincontent-div p{
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .print-btn{
+    background-color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 5px;
+
+
+  }
+
+  .to-home-btn{
+    background: #222;
+    margin-left: 20px;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+
+  .to-home{
+    background: #222;
+    margin-left: 20px;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 12px;
+    text-decoration: none;
+
+    
+    
+    
+  }
+  .cloud-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  
+
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .file-name {
+    margin-right: 10px;
+  }
+  
+  .read-button, .download-button, .delete-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .read-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .download-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
